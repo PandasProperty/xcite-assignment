@@ -34,3 +34,7 @@ If run with Docker :
 ## Testing
 
 - the backend endpoint has tests
+
+## Description  
+
+- see the [video description](https://drive.google.com/file/d/1FYl5UNGKrLl7dwEIODLzknn3Ht6xZnpV/view?usp=sharing)
