@@ -30,3 +30,7 @@ If run with Docker :
 
 - Frontend: [http://localhost:3000](http://localhost:3000)
 - Backend: [http://localhost:4000](http://localhost:4000)
+
+## Testing
+
+- the backend endpoint has tests
