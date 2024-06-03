@@ -1,7 +1,7 @@
-'use server';
+"use server";
 
-import { Photo } from '@/types';
-import Image from 'next/image';
+import { Photo } from "@/types";
+import Image from "next/image";
 
 const ImageAsync = async ({ alt, src, ...props }: {
   src: string;

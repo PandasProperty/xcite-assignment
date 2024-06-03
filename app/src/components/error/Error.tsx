@@ -1,4 +1,4 @@
-import ErrorProps from './types';
+import ErrorProps from "./types";
 
 export default function Error({ error }: ErrorProps) {
   return (

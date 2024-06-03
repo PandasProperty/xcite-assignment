@@ -1,5 +1,5 @@
-import { Request, Response } from 'express';
-import { fetchUsers } from './services';
+import { Request, Response } from "express";
+import { fetchUsers } from "./services";
 
 export async function getLeaderboard(_req: Request, res: Response) {
   try {

@@ -1,12 +1,12 @@
-'use client';
+"use client";
 
-import Card from '@/components/card';
-import Error from '@/components/error';
-import Filters from '@/components/filters';
-import Loading from '@/components/loading';
-import { fetchLeaderboard } from '@/services';
-import { SORT, User } from '@/types';
-import { useEffect, useMemo, useState } from 'react';
+import Card from "@/components/card";
+import Error from "@/components/error";
+import Filters from "@/components/filters";
+import Loading from "@/components/loading";
+import { fetchLeaderboard } from "@/services";
+import { SORT, User } from "@/types";
+import { useEffect, useMemo, useState } from "react";
 
 export default function Leaderboard() {
   const [isLoading, setLoading] = useState(true);

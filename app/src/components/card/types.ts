@@ -1,4 +1,4 @@
-import { User } from '@/types';
+import { User } from "@/types";
 
 export default interface CardProps {
   user: User;

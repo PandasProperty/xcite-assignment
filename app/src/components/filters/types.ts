@@ -1,4 +1,4 @@
-import { SORT } from '@/types';
+import { SORT } from "@/types";
 
 export default interface FiltersProps {
   sort: SORT;

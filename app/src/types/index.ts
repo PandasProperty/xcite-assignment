@@ -15,6 +15,6 @@ export interface Photo {
   thumbnailUrl: string;
 }
 export enum SORT {
-  ASC = 'ASC',
-  DESC = 'DESC',
+  ASC = "ASC",
+  DESC = "DESC",
 }

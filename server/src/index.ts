@@ -1,10 +1,10 @@
-import express from 'express';
-import { getLeaderboard } from './leaderboard.controller';
-import cors from 'cors';
+import express from "express";
+import { getLeaderboard } from "./leaderboard.controller";
+import cors from "cors";
 
 const corsOptions = {
   origin: [
-    'http://localhost:3000',
+    "http://localhost:3000",
   ],
   credentials: false
 }
@@ -14,7 +14,7 @@ const port = 4000;
 
 app.use(cors(corsOptions))
 
-app.get('/leaderboard', getLeaderboard);
+app.get("/leaderboard", getLeaderboard);
 
 app.listen(port, () => {
   console.log(`Server is running on http://127.0.0.1:${port}`);

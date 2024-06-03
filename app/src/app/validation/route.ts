@@ -1,15 +1,15 @@
 import { NextRequest, NextResponse } from "next/server";
 
-const BANNED_COUNTRIES = ['UK'];
-const BANNED_IPS = ['84.232.178.87'];
+const BANNED_COUNTRIES = ["UK"];
+const BANNED_IPS = ["84.232.178.87"];
 
 export async function GET(request: NextRequest){
     // as per documentation, but this seems to be empty
     let ip = request.ip;
     let geoCountry = request.geo?.country;
 
-    // so let's use an external service for testing purposes
-    const res = await fetch('https://geolocation-db.com/json/');
+    // so let"s use an external service for testing purposes
+    const res = await fetch("https://geolocation-db.com/json/");
     const { country_code, IPv4 } = await res.json();
     ip = IPv4;
     geoCountry = country_code;

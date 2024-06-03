@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Menu from '@/components/menu';
-import { Suspense } from 'react';
-import Loading from '@/components/loading';
-import Error from '@/components/error';
+import Menu from "@/components/menu";
+import { Suspense } from "react";
+import Loading from "@/components/loading";
+import Error from "@/components/error";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 };
 
 const fetchValidation = async () => {
-  const res = await fetch('http://127.0.0.1:3000/validation');
+  const res = await fetch("http://127.0.0.1:3000/validation");
   const { valid } = await res.json();
   return { valid };
 }

@@ -1,4 +1,4 @@
-import CardProps from './types';
+import CardProps from "./types";
 
 export default function Card({ user, onDelete }: CardProps) {
   const onClickDelete = (id: number) => () => {

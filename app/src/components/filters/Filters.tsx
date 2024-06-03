@@ -1,6 +1,6 @@
-import { SORT } from '@/types';
-import FiltersProps from './types';
-import { ChangeEvent } from 'react';
+import { SORT } from "@/types";
+import FiltersProps from "./types";
+import { ChangeEvent } from "react";
 
 export default function Filters({
   sort, search, setSort, setSearch,
@@ -18,11 +18,11 @@ export default function Filters({
   }
 
   const onClearSearch = () => {
-    setSearch('');
+    setSearch("");
   }
 
   return (
-    <div className='flex gap-4 md:gap-8 items-center justify-center'>
+    <div className="flex gap-4 md:gap-8 items-center justify-center">
       <p>Filters</p>
       {sort === SORT.ASC ? (
         <div className="cursor-pointer text-bunting-500 hover:text-bunting-600 border-2 border-bunting-500 hover:border-bunting-600 rounded-lg drop-shadow-xl hover:drop-shadow-2xl p-1" onClick={onSortDesc}>

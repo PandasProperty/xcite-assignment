@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
-import Image from 'next/image'
-import Link from 'next/link'
-import { useState } from 'react';
-import { usePathname } from 'next/navigation'
+import Image from "next/image"
+import Link from "next/link"
+import { useState } from "react";
+import { usePathname } from "next/navigation"
 
 export default function Menu() {
   const [openMenu, setOpenMenu] = useState(false);
@@ -38,11 +38,11 @@ export default function Menu() {
           </button>
           <div className="hidden md:block w-full absolute" id="navbar-default">
             <ul className="flex items-center justify-center font-medium flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0">
-              <li className={`border-b-2 border-b-transparent px-2 ${pathname === '/' ? 'border-b-gold-500' : ''}`}>
-                <Link href="/" className={`block py-2 px-3 rounded md:p-0 hover:text-gold-500 text-xl ${pathname === '/' ? 'text-gold-500' : 'text-gold-600'}`}>Leaderboard</Link>
+              <li className={`border-b-2 border-b-transparent px-2 ${pathname === "/" ? "border-b-gold-500" : ""}`}>
+                <Link href="/" className={`block py-2 px-3 rounded md:p-0 hover:text-gold-500 text-xl ${pathname === "/" ? "text-gold-500" : "text-gold-600"}`}>Leaderboard</Link>
               </li>
-              <li className={`border-b-2 border-b-transparent px-2 ${pathname !== '/' ? 'border-b-gold-500' : ''}`}>
-                <Link href="/catalog" className={`block py-2 px-3 rounded md:p-0 hover:text-gold-500 text-xl ${pathname !== '/' ? 'text-gold-500' : 'text-gold-600'}`}>Catalog</Link>
+              <li className={`border-b-2 border-b-transparent px-2 ${pathname !== "/" ? "border-b-gold-500" : ""}`}>
+                <Link href="/catalog" className={`block py-2 px-3 rounded md:p-0 hover:text-gold-500 text-xl ${pathname !== "/" ? "text-gold-500" : "text-gold-600"}`}>Catalog</Link>
               </li>
             </ul>
           </div>
@@ -57,7 +57,7 @@ export default function Menu() {
         onClick={() => setOpenMenu(!openMenu)}
       >
 
-      <div className={`${openMenu ? "absolute inset-0 overflow-hidden" : ''}`}>
+      <div className={`${openMenu ? "absolute inset-0 overflow-hidden" : ""}`}>
         <div className="absolute inset-0 overflow-hidden">
           <div
             className="pointer-events-none fixed max-w-full right-0 left-0 h-full"

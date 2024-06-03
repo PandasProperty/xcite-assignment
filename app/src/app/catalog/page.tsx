@@ -1,10 +1,10 @@
-'use server'
+"use server"
 
-import { Suspense } from 'react';
-import { fetchPhotos } from '@/services';
-import Loading from '@/components/loading';
-import CatalogImage from './CatalogImage';
-import Error from '@/components/error';
+import { Suspense } from "react";
+import { fetchPhotos } from "@/services";
+import Loading from "@/components/loading";
+import CatalogImage from "./CatalogImage";
+import Error from "@/components/error";
 
 async function CatalogAsync() {
   const { photos, error } = await fetchPhotos();

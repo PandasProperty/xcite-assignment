@@ -1,11 +1,11 @@
-import { Photo, User } from '@/types';
+import { Photo, User } from "@/types";
 
 export const fetchLeaderboard: () => Promise<{
   users: User[];
   error?: string;
 }> = async () => {
   try {
-    const res = await fetch('http://127.0.0.1:4000/leaderboard');
+    const res = await fetch("http://127.0.0.1:4000/leaderboard");
     if (res.status !== 200) {
       const { message } = await res.json();
       return { users: [], error: message }
@@ -21,7 +21,7 @@ export const fetchPhotos: () => Promise<{
   error?: string;
 }> = async () => {
   try {
-    const res = await fetch('https://jsonplaceholder.typicode.com/photos', {
+    const res = await fetch("https://jsonplaceholder.typicode.com/photos", {
       next: { revalidate: 3600 }
     })
     const photos = await res.json()
