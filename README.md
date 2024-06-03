@@ -19,12 +19,12 @@ If run with Docker :
 - Stop the docker containers via: **`docker compose down`**
 
 ## Starting the Project without docker
-**`cd server`**
-**`npm install`**
-**`npm start`**
-**`cd ../app`**
-**`npm install`**
-**`npm run dev`**
+- **`cd server`**
+- **`npm install`**
+- **`npm start`**
+- **`cd ../app`**
+- **`npm install`**
+- **`npm run dev`**
 
 ## Accessing the Application
 
