@@ -38,3 +38,11 @@ If run with Docker :
 ## Description  
 
 - see the [video description](https://drive.google.com/file/d/1FYl5UNGKrLl7dwEIODLzknn3Ht6xZnpV/view?usp=sharing)
+
+- the assignment is divided in two:
+- server - the express server
+- app - the nextjs server; I've kept them separately to not add the express server over the nextjs one
+
+- server - includes the endpoint and the unit tests for it (jest)
+- app, I've configured tailwind with two other colors to match the logo
+- I've used the app router structure from nextjs since it's recomanded over the pages
